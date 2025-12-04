@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './Recomended.css'
-import { API_KEY } from '../../data'
 import { Link } from 'react-router-dom';
 import { valueConverter } from '../../../utils';
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const Recomended = ({ categoryId }) => {
     const [apiData, setApiData] = useState([]);

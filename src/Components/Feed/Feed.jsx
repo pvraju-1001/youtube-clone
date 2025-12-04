@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Feed.css'
 import { Link } from 'react-router-dom'
-import { API_KEY } from '../../data'
 import { valueConverter } from '../../../utils'
 import moment from 'moment'
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const Feed = ({ category }) => {
     const [data, setData] = useState([]);

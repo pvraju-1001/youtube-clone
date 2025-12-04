@@ -4,10 +4,10 @@ import like from '../../assets/like.png'
 import dislike from '../../assets/dislike.png'
 import share from '../../assets/share.png'
 import save from '../../assets/save.png'
-import { API_KEY } from '../../data'
 import moment from 'moment'
 import { useParams } from 'react-router-dom'
 import { valueConverter } from '../../../utils'
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const PlayVideo = () => {
     const { videoId } = useParams();
