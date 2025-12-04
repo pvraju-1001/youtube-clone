@@ -1,16 +1,97 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# YouTube UI Clone
 
-Currently, two official plugins are available:
+A YouTube-inspired UI built with React and Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Responsive sidebar navigation with category selection
+- Video feed displaying most popular videos by category
+- Video player page with details, channel info, and comments
+- Recommended videos sidebar
+- Search bar (UI only)
+- Styled with custom CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Structure
 
-## Expanding the ESLint configuration
+```
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── data.js
+│   ├── index.css
+│   ├── main.jsx
+│   ├── assets/
+│   ├── Components/
+│   │   ├── Feed/
+│   │   │   ├── Feed.css
+│   │   │   └── Feed.jsx
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.css
+│   │   │   └── Navbar.jsx
+│   │   ├── PlayVideo/
+│   │   │   ├── PlayVideo.css
+│   │   │   └── PlayVideo.jsx
+│   │   ├── Recomended/
+│   │   │   ├── Recomended.css
+│   │   │   └── Recomended.jsx
+│   │   └── Sidebar/
+│   │       ├── Sidebar.css
+│   │       └── Sidebar.jsx
+│   └── Pages/
+│       ├── Home/
+│       │   ├── Home.css
+│       │   └── Home.jsx
+│       └── Video/
+│           ├── Video.css
+│           └── Video.jsx
+├── utils.js
+├── index.html
+├── package.json
+├── vite.config.js
+├── eslint.config.js
+└── .gitignore
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. **Install dependencies:**
+	```sh
+	npm install
+	```
+
+2. **Start development server:**
+	```sh
+	npm run dev
+	```
+
+3. **Build for production:**
+	```sh
+	npm run build
+	```
+
+4. **Preview production build:**
+	```sh
+	npm run preview
+	```
+
+## API Usage
+
+- Uses the YouTube Data API v3.
+- API key is stored in [`src/data.js`](src/data.js).
+
+## Utilities
+
+- [`valueConverter`](utils.js): Converts numbers to human-readable formats (e.g., 1M, 2K).
+
+## Linting
+
+- ESLint is configured in [`eslint.config.js`](eslint.config.js).
+- Run lint checks:
+  ```sh
+  npm run lint
+  ```
+
+## License
+
+This project is for educational purposes only.
