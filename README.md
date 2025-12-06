@@ -14,7 +14,7 @@ A YouTube-inspired UI built with React and Vite.
 - Styled with custom CSS
 
 ## Project Structure
-
+```
 ├── public/
 ├── src/
 │   ├── App.jsx
@@ -51,6 +51,7 @@ A YouTube-inspired UI built with React and Vite.
 ├── vite.config.js
 ├── eslint.config.js
 └── .gitignore
+```
 
 ## Getting Started
 
