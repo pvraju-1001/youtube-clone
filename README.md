@@ -1,7 +1,8 @@
-
 # YouTube UI Clone
 
 A YouTube-inspired UI built with React and Vite.
+
+🚀 **Live Demo:** https://raju-youtube.vercel.app/
 
 ## Features
 
@@ -14,7 +15,6 @@ A YouTube-inspired UI built with React and Vite.
 
 ## Project Structure
 
-```
 ├── public/
 ├── src/
 │   ├── App.jsx
@@ -51,46 +51,41 @@ A YouTube-inspired UI built with React and Vite.
 ├── vite.config.js
 ├── eslint.config.js
 └── .gitignore
-```
 
 ## Getting Started
 
 1. **Install dependencies:**
-	```sh
-	npm install
-	```
+   npm install
 
 2. **Start development server:**
-	```sh
-	npm run dev
-	```
+   npm run dev
 
 3. **Build for production:**
-	```sh
-	npm run build
-	```
+   npm run build
 
 4. **Preview production build:**
-	```sh
-	npm run preview
-	```
+   npm run preview
 
 ## API Usage
 
 - Uses the YouTube Data API v3.
-- API key is stored in [`src/data.js`](src/data.js).
+- API key is stored in `src/data.js`.
 
 ## Utilities
 
-- [`valueConverter`](utils.js): Converts numbers to human-readable formats (e.g., 1M, 2K).
+- `valueConverter` (in `utils.js`): Converts numbers to human-readable formats (e.g., 1M, 2K).
+
+## Deployment
+
+This project is deployed on **Vercel**.
+
+🔗 **Live URL:** https://raju-youtube.vercel.app/
 
 ## Linting
 
-- ESLint is configured in [`eslint.config.js`](eslint.config.js).
+- ESLint is configured in `eslint.config.js`.
 - Run lint checks:
-  ```sh
   npm run lint
-  ```
 
 ## License
 
